@@ -1,5 +1,11 @@
 @import './base.css';
 
+body {
+  margin: 0;
+  padding-top: 4rem; /* Height of the top nav */
+  padding-left: 200px; /* Width of the side menu */
+}
+
 #app {
   max-width: 1280px;
   margin: 0 auto;
@@ -22,14 +28,16 @@ a,
 }
 
 @media (min-width: 1024px) {
-  body {
+  /* Remove body display flex as it interferes with fixed layout */
+  /* body {
     display: flex;
     place-items: center;
-  }
+  } */
 
   #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* Adjust grid for fixed side menu */
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
     padding: 0 2rem;
   }
 }
