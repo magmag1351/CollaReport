@@ -37,8 +37,9 @@ const handleMenuItemSelect = (item: string) => {
 
 <style scoped>
 .main-content {
-  padding: 1rem;
+  padding: 0; /* Remove padding */
   margin-top: 4rem; /* Height of the top nav */
+  height: calc(100vh - 4rem); /* Fill remaining height */
   transition: margin-left 0.3s ease; /* Smooth transition for margin */
 }
 </style>

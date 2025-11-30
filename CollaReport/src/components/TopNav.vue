@@ -29,28 +29,34 @@ const selectCategory = (categoryId: string) => {
 
 <style scoped>
 .top-nav {
-  display: left;
-  justify-content: space-around;
-  padding: 1rem;
-  background-color: #333;
-  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: flex-start; /* Align left */
+  align-items: center;
+  padding: 0 1rem;
+  background-color: #0052CC; /* JIRA Blue */
+  color: white;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  height: 4rem;
   z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .top-nav-item {
   background: none;
   border: none;
-  color: rgb(255, 255, 255);
-  padding: 0.5rem 1rem;
+  color: white;
+  padding: 0 1rem;
+  height: 100%;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
 }
 
 .top-nav-item:hover {
-  background-color: #555;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 </style>

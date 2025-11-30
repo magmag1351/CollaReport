@@ -57,57 +57,68 @@ const selectMenuItem = (item: string) => {
   left: 0;
   width: 200px; /* Default expanded width */
   height: calc(100% - 4rem); /* Adjust height based on top nav */
-  background-color: #282828; /* Darker background for better contrast */
-  padding: 1rem;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  background-color: #FAFBFC; /* JIRA Light Sidebar or #0747A6 for dark. Let's go with light for modern look, or dark if user prefers. User image shows light content, but let's stick to dark sidebar for contrast as planned. */
+  background-color: #0747A6; /* Deep Blue */
+  padding: 1rem 0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   z-index: 999;
-  color: white; /* Ensure text is visible */
+  color: #DEEBFF;
   transition: width 0.3s ease; /* Smooth transition for width */
 }
 
 .side-menu.collapsed {
   width: 50px; /* Collapsed width */
-  padding: 1rem 0.5rem; /* Adjust padding for collapsed state */
+  padding: 1rem 0;
 }
 
 .menu-header {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
+  padding: 0 1rem;
   margin-bottom: 1rem;
+  height: 2rem;
 }
 
 .hamburger-button {
   background: none;
   border: none;
-  color: white;
-  font-size: 1.5rem;
+  color: #DEEBFF;
+  font-size: 1.2rem;
   cursor: pointer;
   padding: 0;
+  margin-right: 1rem;
 }
 
-.side-menu h3 {
-  margin-top: 0;
-  margin-bottom: 1rem;
+.side-menu h1 {
+  margin: 0;
+  font-size: 1rem;
   color: white;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .side-menu ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .side-menu li {
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #444; /* Lighter border for contrast */
-  cursor: pointer; /* Indicate clickable items */
+  padding: 0.75rem 1.5rem;
+  border-bottom: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #DEEBFF;
+  transition: background-color 0.2s, color 0.2s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .side-menu li:hover {
-  background-color: #555; /* Hover effect */
-}
-
-.side-menu li:last-child {
-  border-bottom: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
 }
 </style>
