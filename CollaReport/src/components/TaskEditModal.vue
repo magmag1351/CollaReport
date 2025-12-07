@@ -59,6 +59,10 @@ const remove = () => {
           </select>
         </div>
         <div class="form-group">
+          <label>Startline</label>
+          <input v-model="editedTask.startline" type="date" class="form-control" />
+        </div>
+        <div class="form-group">
           <label>Deadline</label>
           <input v-model="editedTask.deadline" type="date" class="form-control" />
         </div>

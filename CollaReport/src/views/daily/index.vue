@@ -21,6 +21,7 @@ const addTask = async () => {
       title: 'New Task',
       status: 'todo',
       priority: 'Medium',
+      startline: null,
       deadline: null,
       created_at: new Date()
     });

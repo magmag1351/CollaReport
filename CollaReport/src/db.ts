@@ -5,6 +5,7 @@ export interface Task {
   title: string;
   status: 'todo' | 'inprogress' | 'done';
   priority: 'High' | 'Medium' | 'Low';
+  startline: Date | null;
   deadline: Date | null;
   created_at: Date;
 }
@@ -14,7 +15,7 @@ const db = new Dexie('CollaReportDB') as Dexie & {
 };
 
 db.version(2).stores({
-  tasks: '++id, title, status, priority, deadline, created_at'
+  tasks: '++id, title, status, priority, startline, deadline, created_at'
 });
 
 export { db };
