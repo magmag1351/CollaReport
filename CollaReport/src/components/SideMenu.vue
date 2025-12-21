@@ -17,7 +17,7 @@ interface MenuItems {
 }
 
 const menuItems: MenuItems = {
-  Id_Home: ['How to Use'],
+  Id_Home: ['Monitor'],
   Id_Report: ['Daily Report', 'Week Report', 'Month Report'],
   Id_Setting: ['Theme', 'Language'],
 };

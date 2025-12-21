@@ -13,7 +13,7 @@ const props = defineProps<{
 
 const currentView = computed(() => {
   switch (props.selectedMenuItem) {
-    case 'How to Use':
+    case 'Monitor':
       return HomeView;
     case 'Daily Report':
       return DailyIndex;
